@@ -14,15 +14,17 @@
     .pill { background:#e6f1ff; color:#034e9b; padding:0.25rem 0.5rem; border-radius:6px; font-weight:600; font-size:0.85rem; }
     .box { background: #fff; border-radius: 8px; padding: 1rem 1.25rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 1rem; }
     ul { margin: 0.5rem 0 0 1.25rem; }
-    .actions { display:flex; gap:0.5rem; margin-top:0.75rem; }
+    .actions { display:flex; gap:0.5rem; margin-top:0.75rem; align-items:center; }
     .btn { display:inline-block; text-decoration:none; padding:0.5rem 0.75rem; border-radius:6px; background:#0366d6; color:#fff; font-weight:600; }
     .btn.secondary { background:#e1e4ea; color:#111; font-weight:600; }
+    .note { font-size:0.9rem; color:#555; margin-left:0.5rem; }
     footer { margin-top:1.5rem; font-size:0.9rem; color:#555; }
     @media (prefers-color-scheme: dark) {
       body { background:#0b1020; color:#dbe6ff; }
       .box { background:#07132a; box-shadow: none; }
       .btn.secondary { background:#102030; color:#dbe6ff; }
       .pill { background:#092037; color:#9cc8ff; }
+      .note { color:#9fb3d9; }
     }
   </style>
 </head>
@@ -31,6 +33,7 @@
     <header>
       <h1>Clove Engine</h1>
       <div style="margin-left:auto; display:flex; gap:0.75rem; align-items:center;">
+        <div class="pill">Clustered‑Deferred</div>
         <div>A lightweight custom game engine</div>
       </div>
     </header>
@@ -39,7 +42,7 @@
       <h2 id="about-heading">About</h2>
       <p>
         Clove Engine is a custom 3D game engine built with Vulkan.
-        It features a clustered-deferred rendering pipeline with tiled/clustered lighting
+        It features a clustered‑deferred rendering pipeline with tiled/clustered lighting
         and efficient shadowing, focused on performance and developer control.
       </p>
     </section>
@@ -48,7 +51,7 @@
       <h2 id="features-heading">Features</h2>
       <ul>
         <li>Vulkan rendering backend</li>
-        <li>Clustered-deferred rendering pipeline (tiled/clustered lighting)</li>
+        <li>Clustered‑deferred rendering pipeline (tiled/clustered lighting)</li>
         <li>Dynamic lighting and shadows</li>
         <li>3D game development tools</li>
         <li>Custom asset and save formats</li>
@@ -60,12 +63,20 @@
       <p>Download the latest version of Clove Engine:</p>
 
       <div class="actions">
-        <a class="btn" href="https://github.com/jaxread/Clove-Engine/releases/latest" rel="noopener noreferrer">
-          Download Latest
+        <!-- Primary: latest release asset (requires uploading an asset named Clove-Engine.zip to each release) -->
+        <a class="btn" href="https://github.com/jaxread/Clove-Engine/releases/latest/download/Clove-Engine.zip" rel="noopener noreferrer" aria-label="Download latest release zip">
+          Download (Latest release)
         </a>
-        <a class="btn secondary" href="https://github.com/jaxread/Clove-Engine" rel="noopener noreferrer">
-          View on GitHub
+
+        <!-- Fallback: snapshot of main branch -->
+        <a class="btn secondary" href="https://github.com/jaxread/Clove-Engine/archive/refs/heads/main.zip" rel="noopener noreferrer" aria-label="Download snapshot of main branch">
+          Download (Snapshot)
         </a>
+
+        <!-- Helpful note -->
+        <div class="note" aria-hidden="true">
+          If the Release download returns an HTML page, upload Clove-Engine.zip to your release or use the Snapshot button.
+        </div>
       </div>
     </section>
 
