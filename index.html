@@ -1,79 +1,12 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Clove Engine — a lightweight custom 3D game engine built on Vulkan with a clustered-deferred renderer." />
-  <title>Clove Engine</title>
-  <style>
-    :root { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color: #222; }
-    body { margin: 0; padding: 2rem; background: #f7f7fb; }
-    .container { max-width: 960px; margin: 0 auto; }
-    header { display:flex; align-items:center; gap:1rem; margin-bottom:1.25rem; }
-    h1 { margin: 0; font-size: 1.5rem; }
-    .box { background: #fff; border-radius: 8px; padding: 1rem 1.25rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 1rem; }
-    ul { margin: 0.5rem 0 0 1.25rem; }
-    .actions { display:flex; gap:0.5rem; margin-top:0.75rem; align-items:center; }
-    .btn { display:inline-block; text-decoration:none; padding:0.5rem 0.75rem; border-radius:6px; background:#0366d6; color:#fff; font-weight:600; }
-    .note { font-size:0.9rem; color:#555; margin-left:0.5rem; }
-    footer { margin-top:1.5rem; font-size:0.9rem; color:#555; }
-    @media (prefers-color-scheme: dark) {
-      body { background:#0b1020; color:#dbe6ff; }
-      .box { background:#07132a; box-shadow: none; }
-      .btn { background:#2188ff; }
-      .note { color:#9fb3d9; }
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <header>
-      <h1>Clove Engine</h1>
-      <div style="margin-left:auto; display:flex; gap:0.75rem; align-items:center;">
-        <div>A lightweight custom game engine</div>
-      </div>
-    </header>
+<section class="box" aria-labelledby="download-heading">
+  <h2 id="download-heading">Download</h2>
+  <p>Download the latest version of Clove Engine:</p>
 
-    <section class="box" aria-labelledby="about-heading">
-      <h2 id="about-heading">About</h2>
-      <p>
-        Clove Engine is a custom 3D game engine built with Vulkan.
-        It features a clustered‑deferred rendering pipeline with tiled/clustered lighting
-        and efficient shadowing, focused on performance and developer control.
-      </p>
-    </section>
-
-    <section class="box" aria-labelledby="features-heading">
-      <h2 id="features-heading">Features</h2>
-      <ul>
-        <li>Vulkan rendering backend</li>
-        <li>Clustered‑deferred rendering pipeline (tiled/clustered lighting)</li>
-        <li>Dynamic lighting and shadows</li>
-        <li>3D game development tools</li>
-        <li>Custom asset and save formats</li>
-      </ul>
-    </section>
-
-    <section class="box" aria-labelledby="download-heading">
-      <h2 id="download-heading">Download</h2>
-      <p>Download the latest version of Clove Engine:</p>
-
-      <div class="actions">
-        <!-- Primary: release tag source zip for CloveEngine-1.0 (source ZIP is available as a release asset) -->
-        <a class="btn" href="https://github.com/jaxread/Clove-Engine/archive/refs/tags/CloveEngine-1.0.zip" rel="noopener noreferrer" aria-label="Download latest release zip">
-          Download (Latest release)
-        </a>
-
-        <!-- Helpful note -->
-        <div class="note" aria-hidden="true">
-          This downloads the release source ZIP for tag "CloveEngine-1.0". If you prefer a specific uploaded asset (for example a built ZIP), attach it to the release and I can update the button to point directly to that asset.
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      Maintained by Jax Read
-    </footer>
+  <div class="actions">
+    <a class="btn" href="https://github.com/jaxread/Clove-Engine/archive/refs/tags/CloveEngine-1.0.zip"
+       rel="noopener noreferrer"
+       aria-label="Download latest release zip">
+      Download (Latest release)
+    </a>
   </div>
-</body>
-</html>
+</section>
