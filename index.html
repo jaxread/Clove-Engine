@@ -11,19 +11,16 @@
     .container { max-width: 960px; margin: 0 auto; }
     header { display:flex; align-items:center; gap:1rem; margin-bottom:1.25rem; }
     h1 { margin: 0; font-size: 1.5rem; }
-    .pill { background:#e6f1ff; color:#034e9b; padding:0.25rem 0.5rem; border-radius:6px; font-weight:600; font-size:0.85rem; }
     .box { background: #fff; border-radius: 8px; padding: 1rem 1.25rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 1rem; }
     ul { margin: 0.5rem 0 0 1.25rem; }
     .actions { display:flex; gap:0.5rem; margin-top:0.75rem; align-items:center; }
     .btn { display:inline-block; text-decoration:none; padding:0.5rem 0.75rem; border-radius:6px; background:#0366d6; color:#fff; font-weight:600; }
-    .btn.secondary { background:#e1e4ea; color:#111; font-weight:600; }
     .note { font-size:0.9rem; color:#555; margin-left:0.5rem; }
     footer { margin-top:1.5rem; font-size:0.9rem; color:#555; }
     @media (prefers-color-scheme: dark) {
       body { background:#0b1020; color:#dbe6ff; }
       .box { background:#07132a; box-shadow: none; }
-      .btn.secondary { background:#102030; color:#dbe6ff; }
-      .pill { background:#092037; color:#9cc8ff; }
+      .btn { background:#2188ff; }
       .note { color:#9fb3d9; }
     }
   </style>
@@ -62,19 +59,14 @@
       <p>Download the latest version of Clove Engine:</p>
 
       <div class="actions">
-        <!-- Primary: link to Releases page (safe fallback if an asset isn't uploaded) -->
-        <a class="btn" href="https://github.com/jaxread/Clove-Engine/releases/latest" rel="noopener noreferrer" aria-label="Open releases page">
+        <!-- Primary: release tag source zip for CloveEngine-1.0 (source ZIP is available as a release asset) -->
+        <a class="btn" href="https://github.com/jaxread/Clove-Engine/archive/refs/tags/CloveEngine-1.0.zip" rel="noopener noreferrer" aria-label="Download latest release zip">
           Download (Latest release)
-        </a>
-
-        <!-- Fallback: snapshot of main branch -->
-        <a class="btn secondary" href="https://github.com/jaxread/Clove-Engine/archive/refs/heads/main.zip" rel="noopener noreferrer" aria-label="Download snapshot of main branch">
-          Download (Snapshot)
         </a>
 
         <!-- Helpful note -->
         <div class="note" aria-hidden="true">
-          If the release doesn't include an uploaded Clove-Engine.zip asset, the direct asset link will 404 — open the Releases page and download the attached asset, or use the Snapshot button.
+          This downloads the release source ZIP for tag "CloveEngine-1.0". If you prefer a specific uploaded asset (for example a built ZIP), attach it to the release and I can update the button to point directly to that asset.
         </div>
       </div>
     </section>
